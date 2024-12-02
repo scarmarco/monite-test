@@ -20,7 +20,7 @@ export default function NewProduct() {
       formData.entries().forEach((data) => console.log(data));
       router.back();
     },
-    [router]
+    [router],
   );
 
   return (

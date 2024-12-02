@@ -13,7 +13,7 @@ import { getUnits, postUnit, type Units } from "@/services/api";
 import { useToastContext } from "@/contexts/ToastContext";
 
 export function UnitsDropdown(
-  props: React.InputHTMLAttributes<HTMLInputElement>
+  props: React.InputHTMLAttributes<HTMLInputElement>,
 ) {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState("");
@@ -34,7 +34,7 @@ export function UnitsDropdown(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       setValue(event.target.value);
     },
-    []
+    [],
   );
 
   const handleNewUnit = useCallback(
@@ -49,7 +49,7 @@ export function UnitsDropdown(
         console.log(error);
       }
     },
-    [setToasts]
+    [setToasts],
   );
 
   const handleSelect = useCallback(
@@ -57,7 +57,7 @@ export function UnitsDropdown(
       setValue(unit);
       setIsOpen(false);
     },
-    []
+    [],
   );
 
   const newValueExists = useMemo(() => {

@@ -3,17 +3,24 @@ import {
   UserIcon,
   ChevronUpDownIcon,
   ChevronRightIcon,
+  ArchiveBoxArrowDownIcon,
+  ArrowsRightLeftIcon,
+  NewspaperIcon,
+  BanknotesIcon,
+  PresentationChartBarIcon,
+  UsersIcon,
+  PlusCircleIcon,
 } from "@heroicons/react/24/outline";
 
 const NAV_ITEMS = [
-  { id: 1, Icon: Cog8ToothIcon, text: "Dashboard" },
-  { id: 2, Icon: Cog8ToothIcon, text: "Transactions" },
-  { id: 3, Icon: Cog8ToothIcon, text: "Invoices" },
-  { id: 4, Icon: Cog8ToothIcon, text: "Incoming bills" },
-  { id: 5, Icon: Cog8ToothIcon, text: "Expenses", RightIcon: ChevronRightIcon },
-  { id: 6, Icon: Cog8ToothIcon, text: "Accounting" },
-  { id: 7, Icon: Cog8ToothIcon, text: "Team" },
-  { id: 8, Icon: Cog8ToothIcon, text: "Other", RightIcon: ChevronRightIcon },
+  { id: 1, Icon: ArchiveBoxArrowDownIcon, text: "Dashboard" },
+  { id: 2, Icon: ArrowsRightLeftIcon, text: "Transactions" },
+  { id: 3, Icon: NewspaperIcon, text: "Invoices" },
+  { id: 4, Icon: BanknotesIcon, text: "Incoming bills" },
+  { id: 5, Icon: NewspaperIcon, text: "Expenses", RightIcon: ChevronRightIcon },
+  { id: 6, Icon: PresentationChartBarIcon, text: "Accounting" },
+  { id: 7, Icon: UsersIcon, text: "Team" },
+  { id: 8, Icon: PlusCircleIcon, text: "Other", RightIcon: ChevronRightIcon },
   { id: 9, Icon: Cog8ToothIcon, text: "Settings", RightIcon: ChevronRightIcon },
 ];
 

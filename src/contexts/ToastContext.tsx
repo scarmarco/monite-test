@@ -36,7 +36,7 @@ export const ToastProvider = ({ children }: PropsWithChildren) => {
         removeToast(toast);
       }, 3000);
     },
-    [removeToast]
+    [removeToast],
   );
 
   return (
